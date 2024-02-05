@@ -15,6 +15,16 @@
       crossorigin
       src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"
     ></script>
-    <script src="script.js"></script>
+    <script>
+      const heading = React.createElement(
+        "h1",
+        {},
+        "Hello Welcome to the react"
+      );
+      let root = document.getElementById("root");
+      let rootToBeRendered = ReactDOM.createRoot(root);
+
+      rootToBeRendered.render(heading);
+    </script>
   </body>
 </html>
